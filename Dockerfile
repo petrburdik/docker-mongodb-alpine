@@ -21,8 +21,7 @@ RUN echo "@edge http://dl-3.alpinelinux.org/alpine/edge/main" >> /etc/apk/reposi
     apk update upgrade && \
     apk add --no-cache bash && \
     apk add --no-cache mongodb && \
-    apk add --no-cache mongodb-tools && \
-    apk add --no-cache mc
+    apk add --no-cache mongodb-tools
 
 RUN mkdir -p /data/db /data/configdb /data/backup \
     && chown -R mongodb:mongodb /data/
