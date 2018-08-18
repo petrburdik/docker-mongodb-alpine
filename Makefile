@@ -1,5 +1,5 @@
-VERSION = 1.0.0
-IMAGE = petrburdik/mongodb-alpine:$(VERSION)
+VERSION = 0.5.0
+IMAGE = petrburdik/docker-mongodb-alpine:$(VERSION)
 
 all:
 
