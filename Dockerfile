@@ -22,13 +22,13 @@ RUN echo "@edge http://dl-3.alpinelinux.org/alpine/edge/main" >> /etc/apk/reposi
     apk add --no-cache bash && \
     cd /tmp && \
     apk fetch -s boost-system > boost-system.apk && \
-    apk add --no-cache --no-network --allow-untrusted /tmp/boost-system.apk && \
+    apk add --no-cache --allow-untrusted /tmp/boost-system.apk && \
     apk fetch -s boost-filesystem > boost-filesystem.apk && \
-    apk add --no-cache --no-network --allow-untrusted /tmp/boost-filesystem.apk && \
+    apk add --no-cache --allow-untrusted /tmp/boost-filesystem.apk && \
     apk fetch -s boost-iostreams > boost-iostreams.apk && \
-    apk add --no-cache --no-network --allow-untrusted /tmp/boost-iostreams.apk && \
+    apk add --no-cache --allow-untrusted /tmp/boost-iostreams.apk && \
     apk fetch -s boost-program_options > boost-program_options.apk && \
-    apk add --no-cache --no-network --allow-untrusted /tmp/boost-program_options.apk && \
+    apk add --no-cache --allow-untrusted /tmp/boost-program_options.apk && \
     rm /tmp/*.apk && \
     apk add --no-cache mongodb && \
     apk add --no-cache mongodb-tools
