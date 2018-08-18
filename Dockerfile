@@ -20,16 +20,10 @@ RUN echo "@edge http://dl-3.alpinelinux.org/alpine/edge/main" >> /etc/apk/reposi
     echo "http://dl-cdn.alpinelinux.org/alpine/edge/community" >> /etc/apk/repositories && \
     apk update upgrade && \
     apk add --no-cache bash && \
-    cd /tmp && \
-    apk fetch -s boost-system > boost-system.apk && \
-    apk add --no-cache --allow-untrusted /tmp/boost-system.apk && \
-    apk fetch -s boost-filesystem > boost-filesystem.apk && \
-    apk add --no-cache --allow-untrusted /tmp/boost-filesystem.apk && \
-    apk fetch -s boost-iostreams > boost-iostreams.apk && \
-    apk add --no-cache --allow-untrusted /tmp/boost-iostreams.apk && \
-    apk fetch -s boost-program_options > boost-program_options.apk && \
-    apk add --no-cache --allow-untrusted /tmp/boost-program_options.apk && \
-    rm /tmp/*.apk && \
+    apk add --no-cache boost-system@edge && \
+    apk add --no-cache boost-filesystem@edge && \
+    apk add --no-cache boost-iostreams@edge && \
+    apk add --no-cache boost-program_options@edge && \
     apk add --no-cache mongodb && \
     apk add --no-cache mongodb-tools
 

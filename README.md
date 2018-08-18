@@ -7,6 +7,7 @@ This repository:
 
 ## Version specific
 - v 0.5.0 - dependency files are masked, I use dirty hack to install it
+- v 0.5.1 - better hack
 
 ## Install image from hub.docker.com
 
